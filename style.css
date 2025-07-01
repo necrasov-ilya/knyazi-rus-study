@@ -1,0 +1,1000 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    color: red;
+}
+
+/* ШРИФТЫ НИЖЕ */
+@font-face {
+    font-family: 'Involve';
+    src: url('./fonts/involve/Involve-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Involve';
+    src: url('./fonts/involve/Involve-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Involve';
+    src: url('./fonts/involve/Involve-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Involve';
+    src: url('./fonts/involve/Involve-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    }
+    
+/* ШРИФТЫ ВЫШЕ */
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: white;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.header-logo {
+    width: 150px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    width: 130px;
+    height: 42px;
+    margin-left: 7px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.header-button:first-child {
+    margin-left: 0;
+}
+
+.header-button-oleg,
+.header-button-igor,
+.header-button-olga {
+    font-family: 'Involve', sans-serif;
+    padding-bottom: 2px;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.header-button-oleg:hover,
+.header-button-igor:hover,
+.header-button-olga:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.header-button-main {
+    background-color: white;
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-right: 7px;
+    transition: all 0.5 s ease;
+}
+
+.header-button-main:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.header-divider {
+    width: 1px;
+    height: 42px;
+    background-color: black;
+    margin: 0 7px;
+}
+
+main {
+    flex: 1;
+    background-color: black; /* фон затычка */
+}
+
+footer {
+    background-color: white;
+    height: 440px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 944px;
+    height: 133px;
+}
+
+.footer-text {
+    color: #D9D9D9;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+.footer-highlight {
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2px;
+    color: black;
+}
+
+.footer-button {
+    margin-top: 20px;
+    background-color: black;
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 21px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color:white;
+    cursor: pointer;
+    color:black;
+    border-radius:15px;
+    outline: 1px solid rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0); 
+}
+
+/* ПРЕВЬЮ НАЧАЛО */
+.preview {
+    position: relative;
+    width: 100%;
+    height: 820px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 370px;
+    border-radius: 0 0 35px 35px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8.6px);
+    padding: 48px 29px 29px 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preview-text-heading {
+    font-family: 'Involve', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: -0.778px;
+    color: white;
+}
+
+.preview-name {
+    font-weight: 600;
+    cursor: pointer;
+    color: red;
+    text-shadow: 0 0 2px transparent; 
+    transition: text-shadow 0.3s ease;
+}
+
+.preview-name:hover {
+    font-weight: 700;
+    color: rgb(255, 68, 68);
+    text-shadow: 0 0 5px rgb(255, 68, 68); 
+}
+
+.preview-text {
+    color: #8B949E;
+    font-family: 'Involve', sans-serif;
+    font-size: 25px;
+    font-weight: 00;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+.bottom-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-elements {
+    display: flex;
+    align-items: center;
+}
+
+.header-divider-preview {
+    width: 1px;
+    height: 42px;
+    background-color: white;
+    margin: 0 7px;
+}
+
+.start-button {
+    background: transparent;
+    border: 1px solid red;
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+    color: white;
+    padding: 0 20px;
+    width: 245px;
+    height: 43px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center; 
+}
+
+.start-button:hover {
+    background: red;
+    border: 1px solid red;
+    color: white;
+    border-radius: 30px;
+}
+
+.start-button svg {
+    margin-left: 5px;
+}
+
+.error-button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 245px;
+    height: 43px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Involve', sans-serif;
+    font-weight: 400;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-radius 0.7s ease-in-out;
+}
+
+.error-button:hover {
+    background:white;
+    color:black;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+/* КОНЕЦ ПРЕВЬЮ */
+
+
+
+/* Карточки князей: Олег, Игорь, Ольга */
+.main-oleg, .main-igor, .main-olga {
+    background-color: black;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info-main-oleg, .info-main-igor, .info-main-olga {
+    width: 98%;
+    height: 612px;
+    display: flex;
+    position: relative;
+    margin-top: 0;
+}
+
+.left-side, .left-side-igor, .left-side-olga {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.name-block, .name-block-igor, .name-block-olga {
+    width: 705px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #B0AE66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-oleg, .name-igor, .name-olga {
+    font-family: 'Involve', sans-serif;
+    font-size: 60px;
+    color: black;
+}
+
+.info-block, .info-block-igor, .info-block-olga {
+    width: 705px;
+    height: 500px;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 12px;
+    overflow-y: auto;
+}
+
+.info-title, .info-title-igor, .info-title-olga {
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+.info-divider {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 30px;
+    height: 1px; 
+    background-color: white;
+}
+
+.info-text, .info-text-igor, .info-text-olga {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.photo-panel, .photo-panel-igor, .photo-panel-olga {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-container, .photo-container-igor, .photo-container-olga {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image, .background-image-igor, .background-image-olga {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portrait-image, .portrait-image-igor, .portrait-image-olga {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 108px);
+}
+
+.control-panel, .control-panel-igor, .control-panel-olga {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 108px;
+    background: #1A1A1A;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrow-button, .arrow-button-igor, .arrow-button-olga {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.50);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-button:hover, .arrow-button-igor:hover, .arrow-button-olga:hover {
+    border: 1px solid white;
+    background: black;
+}
+
+.state-buttons, .state-buttons-igor, .state-buttons-olga {
+    display: flex;
+    gap: 10px;
+}
+
+.state-button, .state-button-igor, .state-button-olga {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #B0AE66;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B0AE66;
+    padding-top: 0px;
+    font-size: 25px;
+    font-family: 'Involve', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.state-button.active, .state-button:hover,
+.state-button-igor.active, .state-button-igor:hover,
+.state-button-olga.active, .state-button-olga:hover {
+    background-color: #B0AE66;
+    color: black;
+    font-family: 'Involve', sans-serif;
+}
+
+/* proizvedenie iskustva moe, AKA СЛАЙДЕЕЕЕЕЕР */
+.slider-section, .slider-section-igor, .slider-section-olga {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+
+.slider, .slider-igor, .slider-olga {
+    position: relative;
+    justify-content: left;
+    width: 73%;
+    height: 82px;
+    background-color:#0E0E0E;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-left: 2%;
+    flex-shrink: 0;
+}
+
+.years, .years-igor, .years-olga {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    margin-right: 25px;
+    margin-left: 25px;;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year, .year-igor, .year-olga {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.draggable-block, .draggable-block-igor, .draggable-block-olga {
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px red;
+    top: 15px;
+    left: 13px;
+    border-radius: 30px;
+    cursor: grab;
+    transition: all 0.5s ease;
+}
+
+.draggable-block.inactive, .draggable-block-olga.inactive, .draggable-block-igor.inactive {
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    box-shadow: inset 0 0 0 2px #7979793d;
+    background-color: #7979793d;
+    top: 15px;
+    left: 13px;
+    border-radius: 30px;
+    cursor: grab;
+    transition: all 0.5s ease;
+}
+
+.draggable-block:hover, .draggable-block-igor:hover, .draggable-block-olga:hover {
+    background-color: #aeae6377;
+    box-shadow: inset 0 0 0 4px #AEAE63; 
+}
+
+.fact-buttons, .fact-buttons-igor, .fact-buttons-olga,
+.fact-button, .fact-button-igor, .fact-button-olga {
+    flex-grow: 1; 
+}
+
+.fact-buttons, .fact-buttons-igor, .fact-buttons-olga {
+    display: flex;
+    position: relative; 
+    margin-right:2%;
+}
+
+.fact-button, .fact-button-igor, .fact-button-olga {
+    height: 83px;
+    background: #AEAE63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fact-button:hover, .fact-button-igor:hover, .fact-button-olga:hover {
+    border: 1px solid #AEAE63;
+    background:transparent;
+    border: 1px solid #AEAE63;
+    color: #AEAE63;
+}
+
+.left-fact-button, .left-fact-button-igor, .left-fact-button-olga {
+    border-radius: 45px 0px 0px 45px;
+    margin-right: 6px;
+}
+
+.middle-fact-button, .middle-fact-button-igor, .middle-fact-button-olga {
+    margin-right: 6px;
+}
+
+.right-fact-button, .right-fact-button-igor, .right-fact-button-olga {
+    border-radius: 0px 45px 45px 0px;
+}
+/* proizvedenie iskustva moe, AKA СЛАЙДЕЕЕЕЕЕР ЗАКОНЧИЛСЯ :( */
+/* Конец? */
+
+/* Скажу одно: вапдлывполдыавпржытрпкуелпждкполыдаэпжьрав */
+
+
+
+/*CЛУЖЕБНАЯ ЧАСТЬ*/
+.footer-sluzh {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-contacts-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-contacts-text {
+    text-align: left;
+    max-width: 60%;
+}
+
+.footer-sluzh-logo {
+    text-align: right;
+    margin-top: 20px;
+    max-width: 40%;
+}
+
+.team-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-members {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.typical-info {
+    font-size: 14px;
+}
+
+.college-logo {
+    max-height: 100px;
+    max-width: 100%;
+}
+/*CЛУЖЕБНАЯ ЧАСТЬ*/
+
+
+
+/* АДАПТИВНОСТЬ */
+@media screen and (max-width: 1200px) {
+
+    header {
+        padding: 0 20px;
+        height: auto;
+        min-height: 62px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-nav {
+        flex-direction: gap;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header-button {
+        width: 100%;
+        margin: 5px 5px;
+    }
+
+    .header-divider {
+        display: none;
+    }
+
+    .preview {
+        margin-top: 120px;
+        height: auto;
+        min-height: 600px;
+        padding: 10px;
+    }
+
+    .preview-container {
+        height: 500px;
+    }
+
+    .overlay {
+        height: auto;
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .preview-text-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .preview-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .bottom-elements {
+        flex-direction: gap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .start-button,
+    .error-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .main-oleg, .main-igor, .main-olga {
+        height: auto;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .info-main-oleg, .info-main-igor, .info-main-olga {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side, .left-side-igor, .left-side-olga {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .name-block, .name-block-igor, .name-block-olga {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        padding: 10px;
+    }
+
+    .name-oleg, .name-igor, .name-olga {
+        font-size: 40px;
+    }
+
+    .info-block, .info-block-igor, .info-block-olga {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .photo-panel, .photo-panel-igor, .photo-panel-olga {
+        width: 100%;
+        height: 400px;
+    }
+
+    .slider-section, .slider-section-igor, .slider-section-olga {
+        flex-direction: column;
+        margin: 20px 10px;
+        gap: 15px;
+    }
+
+    .slider, .slider-igor, .slider-olga {
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .years, .years-igor, .years-olga {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        flex-wrap: nowrap;
+        gap: 25px;
+    }
+
+    .year, .year-igor, .year-olga {
+        font-size: 14px;
+        white-space: nowrap;
+        flex-shrink: 1;
+        min-width: auto;
+        margin: 0;
+    }
+
+    .draggable-block, .draggable-block-igor, .draggable-block-olga, 
+    .draggable-block.inactive, .draggable-block-igor.inactive, .draggable-block-olga.inactive {
+        width: 80px;
+        height: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .fact-buttons, .fact-buttons-igor, .fact-buttons-olga {
+        width: 100%;
+        display: flex;
+        gap: 5px;
+    }
+
+    .fact-button, .fact-button-igor, .fact-button-olga {
+        font-size: 16px;
+        padding: 10px;
+        height: 60px;
+        flex: 1;
+    }
+
+    .control-panel, .control-panel-igor, .control-panel-olga {
+        height: 80px;
+        padding: 0 15px;
+    }
+
+    .state-button, .state-button-igor, .state-button-olga {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .arrow-button, .arrow-button-igor, .arrow-button-olga {
+        width: 45px;
+        height: 45px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .footer-button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .footer-sluzh {
+        padding: 15px;
+    }
+
+    .footer-contacts-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-contacts-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-sluzh-logo {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .college-logo {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .preview-text-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .name-oleg, .name-igor, .name-olga {
+        font-size: 32px;
+    }
+
+    .info-title, .info-title-igor, .info-title-olga {
+        font-size: 28px;
+    }
+
+    .info-text, .info-text-igor, .info-text-olga {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .slider, .slider-igor, .slider-olga {
+        height: 50px;
+    }
+
+    .year, .year-igor, .year-olga {
+        font-size: 12px;
+    }
+
+    .draggable-block, .draggable-block-igor, .draggable-block-olga, 
+    .draggable-block.inactive, .draggable-block-igor.inactive, .draggable-block-olga.inactive {
+        width: 70px;
+        height: 35px;
+    }
+
+    .fact-button, .fact-button-igor, .fact-button-olga {
+        font-size: 14px;
+        padding: 8px;
+        height: 50px;
+    }
+
+    .control-panel, .control-panel-igor, .control-panel-olga {
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    .state-button, .state-button-igor, .state-button-olga {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .arrow-button, .arrow-button-igor, .arrow-button-olga {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* для супер маленьких экранов */
+@media screen and (max-width: 360px) {
+    .preview-text-heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .name-oleg, .name-igor, .name-olga {
+        font-size: 28px;
+    }
+
+    .year, .year-igor, .year-olga {
+        font-size: 11px;
+    }
+
+    .fact-button, .fact-button-igor, .fact-button-olga {
+        font-size: 12px;
+        padding: 6px;
+        height: 45px;
+    }
+}

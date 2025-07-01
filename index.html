@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Исторический проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="real-header">
+        <img src="materials/photo/logo.png" alt="Логотип" class="header-logo" onclick="scrollToAnchor('preview')">
+        <nav class="header-nav">
+            <button class="header-button header-button-main" onclick="scrollToAnchor('preview')">Главная</button>
+            <div class="header-divider"></div>
+            <button class="header-button header-button-oleg" onclick="scrollToAnchor('oleg')">Олег</button>
+            <button class="header-button header-button-igor" onclick="scrollToAnchor('igor')">Игорь</button>
+            <button class="header-button header-button-olga" onclick="scrollToAnchor('olga')">Ольга</button>
+        </nav>
+    </header>
+<main>
+        
+        <div class="preview">
+            <div class="preview-container">
+                <img src="materials/photo/preview/preview.png" class="preview-image">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h1 class="preview-text-heading">Князья: <span class="preview-name" onclick="scrollToAnchor('oleg')">Олег</span>, <span class="preview-name" onclick="scrollToAnchor('igor')">Игорь</span>, <span class="preview-name" onclick="scrollToAnchor('olga')">Ольга</span></h1>
+                        <p class="preview-text">Наполнение этого сайта подразумевает под собой интерактивное восприятие информации о князьях, чем они отличились и какие интересные факты скрывают</p>
+                    </div>
+                    <div class="bottom-elements">
+                        <div class="left-elements">
+                            <div class="header-divider-preview"></div>
+                            <button class="start-button" onclick="scrollToAnchor('oleg')">
+                                Начнём
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none"> 
+                                    <path d="M7.46783 3.21967C7.17494 2.92678 6.70006 2.92678 6.40717 3.21967C6.11428 3.51256 6.11428 3.98744 6.40717 4.28033L7.46783 3.21967ZM11.1875 8L11.7178 8.53033C12.0107 8.23744 12.0107 7.76256 11.7178 7.46967L11.1875 8ZM6.40717 11.7197C6.11428 12.0126 6.11428 12.4874 6.40717 12.7803C6.70006 13.0732 7.17494 13.0732 7.46783 12.7803L6.40717 11.7197ZM6.40717 4.28033L10.6572 8.53033L11.7178 7.46967L7.46783 3.21967L6.40717 4.28033ZM10.6572 7.46967L6.40717 11.7197L7.46783 12.7803L11.7178 8.53033L10.6572 7.46967Z" fill="white"/>
+                                    <path d="M1.9375 8H11.1875Z" fill="white"/>
+                                    <path d="M1.9375 8H11.1875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="10 10"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="error-button" onclick="window.open('https://t.me/green_bro')">Я нашёл ошибку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    <div class="oleg">
+        <div class="main-oleg">
+            <div class="info-main-oleg" id="info-main-oleg">
+                <div class="left-side">
+                    <div class="name-block">
+                        <h1 class="name-oleg">Олег</h1>
+                        <h2>(879-912г.)</h2>
+                    </div>
+                    <div class="info-block">
+                        <h2 class="info-title" id="info-title">Error - <strong>418</strong></h2>
+                        <div class="info-divider"></div>
+                        <p class="info-text" id="info-text">
+                        </strong><br><strong>-------------- КРИТИЧЕСКАЯ ОШИБКА --------------</strong></br>Мало кто читает этот текст, но скажу о том, что он написан с огромной любовью, а также говорит о ошибках в коде, за счёт чего состояние этого окна не поменялось и вы увидели то, чего не должны были, <strong>попробуйте потыкаться</strong> :)
+                        </p>
+                    </div>
+                </div>
+                <div class="photo-panel">
+                    <div class="photo-container">
+                        <img src="materials/characters/Character_OLEG/background/background-1.png" alt="Фоновое изображение" class="background-image" id="background-image">
+                        <img src="materials/characters/Character_OLEG/portrait.png" alt="Портрет Олега" class="portrait-image">
+                        <div class="control-panel">
+                            <div class="arrow-button left-arrow" onclick="prevState()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M18 9C18.5523 9 19 8.55228 19 8C19 7.44772 18.5523 7 18 7L18 9ZM0.292893 7.29289C-0.0976311 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292893 7.29289ZM18 7L1 7L1 9L18 9L18 7Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="state-buttons">
+                                <div class="state-button active" onclick="changeState(0)" id="state-0">1</div>
+                                <div class="state-button" onclick="changeState(1)" id="state-1">2</div>
+                                <div class="state-button" onclick="changeState(2)" id="state-2">3</div>
+                            </div>
+                            <div class="arrow-button right-arrow" onclick="nextState()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M1 9C0.447715 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44772 0.447715 7 1 7L1 9ZM18.7071 7.29289C19.0976 7.68342 19.0976 8.31658 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928933C11.3195 0.538409 11.9526 0.538409 12.3431 0.928933L18.7071 7.29289ZM1 7L18 7L18 9L1 9L1 7Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- tipa slaider ya zakolebalsya na*** blin -->
+        <div class="slider-section">
+            <div class="slider">
+                <div class="years">
+                    <span class="year" data-index="0">879г.</span>
+                    <span class="year" data-index="1">882г.</span>
+                    <span class="year" data-index="1">883г.</span>
+                    <span class="year" data-index="2">907г.</span>
+                    <span class="year" data-index="3">912г.</span>
+                </div>
+                <div class="draggable-block" id="draggable-block"></div>
+            </div>
+            <div class="fact-buttons">
+                <div class="fact-button fact-button-oleg left-fact-button">1 факт</div>
+                <div class="fact-button fact-button-oleg middle-fact-button">2 факт</div>
+                <div class="fact-button fact-button-oleg right-fact-button">3 факт</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="igor">
+        <div class="main-igor">
+            <div class="info-main-igor" id="info-main-igor">
+                <div class="left-side-igor">
+                    <div class="name-block-igor">
+                        <h1 class="name-igor">Игорь</h1>
+                        <h2>(912-945г.)</h2>
+                    </div>
+                    <div class="info-block-igor">
+                        <h2 class="info-title-igor" id="info-title-igor">Error - <strong>418</strong></h2>
+                        <div class="info-divider"></div>
+                        <p class="info-text-igor" id="info-text-igor">
+                            <strong>-------------- КРИТИЧЕСКАЯ ОШИБКА --------------</strong><br>Мало кто читает этот текст, но скажу о том, что он написан с огромной любовью, а также говорит о ошибках в коде, за счёт чего состояние этого окна не поменялось и вы увидели то, чего не должны были, <strong>попробуйте потыкаться</strong> :)
+                        </p>
+                    </div>
+                </div>
+                <div class="photo-panel-igor">
+                    <div class="photo-container-igor">
+                        <img src="materials/characters/Character_IGOR/background/background-1.png" alt="Фоновое изображение Игоря" class="background-image-igor" id="background-image-igor">
+                        <img src="materials/characters/Character_IGOR/portrait.png" alt="Портрет Игоря" class="portrait-image-igor">
+                        <div class="control-panel-igor">
+                            <div class="arrow-button left-arrow-igor" onclick="prevStateIgor()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M18 9C18.5523 9 19 8.55228 19 8C19 7.44772 18.5523 7 18 7L18 9ZM0.292893 7.29289C-0.0976311 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292893 7.29289ZM18 7L1 7L1 9L18 9L18 7Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="state-buttons-igor">
+                                <div class="state-button-igor active" onclick="changeStateIgor(0)" id="state-igor-0">1</div>
+                                <div class="state-button-igor" onclick="changeStateIgor(1)" id="state-igor-1">2</div>
+                                <div class="state-button-igor" onclick="changeStateIgor(2)" id="state-igor-2">3</div>
+                            </div>
+                            <div class="arrow-button right-arrow-igor" onclick="nextStateIgor()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M1 9C0.447715 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44772 0.447715 7 1 7L1 9ZM18.7071 7.29289C19.0976 7.68342 19.0976 8.31658 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928933C11.3195 0.538409 11.9526 0.538409 12.3431 0.928933L18.7071 7.29289ZM1 7L18 7L18 9L1 9L1 7Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- tipa slaider ya zakolebalsya na*** blin -->
+        <div class="slider-section-igor">
+            <div class="slider-igor">
+                <div class="years-igor">
+                    <span class="year-igor" data-index="0">912г.</span>
+                    <span class="year-igor" data-index="1">914г.</span>
+                    <span class="year-igor" data-index="2">915г.</span>
+                    <span class="year-igor" data-index="3">920г.</span>
+                    <span class="year-igor" data-index="4">922г.</span>
+                    <span class="year-igor" data-index="5">944г.</span>
+                    <span class="year-igor" data-index="6">945г.</span>
+                </div>
+                <div class="draggable-block-igor" id="draggable-block-igor"></div>
+            </div>
+            <div class="fact-buttons fact-buttons-igor">
+                <div class="fact-button fact-button-igor left-fact-button">1 факт</div>
+                <div class="fact-button fact-button-igor middle-fact-button">2 факт</div>
+                <div class="fact-button fact-button-igor right-fact-button">3 факт</div>
+            </div>            
+        </div>
+    </div>
+
+
+
+    <div class="olga">
+        <div class="main-olga">
+            <div class="info-main-olga" id="info-main-olga">
+                <div class="left-side-olga">
+                    <div class="name-block-olga">
+                        <h1 class="name-olga">Ольга</h1>
+                        <h2>(890-969г.)</h2>
+                    </div>
+                    <div class="info-block-olga">
+                        <h2 class="info-title-olga" id="info-title-olga">Error - <strong>418</strong></h2>
+                        <div class="info-divider"></div>
+                        <p class="info-text-olga" id="info-text-olga">
+                            <strong>-------------- КРИТИЧЕСКАЯ ОШИБКА --------------</strong><br>Мало кто читает этот текст, но скажу о том, что он написан с огромной любовью, а также говорит о ошибках в коде, за счёт чего состояние этого окна не поменялось и вы увидели то, чего не должны были, <strong>попробуйте потыкаться</strong> :)
+                        </p>
+                    </div>
+                </div>
+                <div class="photo-panel-olga">
+                    <div class="photo-container-olga">
+                        <img src="materials/characters/Character_OLGA/background/background-1.png" alt="Фоновое изображение Ольги" class="background-image-olga" id="background-image-olga">
+                        <img src="materials/characters/Character_OLGA/portrait.png" alt="Портрет Ольги" class="portrait-image-olga">
+                        <div class="control-panel-olga">
+                            <div class="arrow-button left-arrow-olga" onclick="prevStateolga()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M18 9C18.5523 9 19 8.55228 19 8C19 7.44772 18.5523 7 18 7L18 9ZM0.292893 7.29289C-0.0976311 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292893 7.29289ZM18 7L1 7L1 9L18 9L18 7Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="state-buttons-olga">
+                                <div class="state-button-olga active" onclick="changeStateolga(0)" id="state-olga-0">1</div>
+                                <div class="state-button-olga" onclick="changeStateolga(1)" id="state-olga-1">2</div>
+                                <div class="state-button-olga" onclick="changeStateolga(2)" id="state-olga-2">3</div>
+                            </div>
+                            <div class="arrow-button right-arrow-olga" onclick="nextStateolga()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                                    <path d="M1 9C0.447715 9 -4.82823e-08 8.55228 0 8C4.82823e-08 7.44772 0.447715 7 1 7L1 9ZM18.7071 7.29289C19.0976 7.68342 19.0976 8.31658 18.7071 8.70711L12.3431 15.0711C11.9526 15.4616 11.3195 15.4616 10.9289 15.0711C10.5384 14.6805 10.5384 14.0474 10.9289 13.6569L16.5858 8L10.9289 2.34315C10.5384 1.95262 10.5384 1.31946 10.9289 0.928933C11.3195 0.538409 11.9526 0.538409 12.3431 0.928933L18.7071 7.29289ZM1 7L18 7L18 9L1 9L1 7Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- tipa slaider ya zakolebalsya na*** blin -->
+        <div class="slider-section-olga">
+            <div class="slider-olga">
+                <div class="years-olga">
+                    <span class="year-olga" data-index="0">890г.</span>
+                    <span class="year-olga" data-index="1">903г.</span>
+                    <span class="year-olga" data-index="2">945г.</span>
+                    <span class="year-olga" data-index="3">947г.</span>
+                    <span class="year-olga" data-index="4">969г.</span>
+                </div>
+                <div class="draggable-block-olga" id="draggable-block-olga"></div>
+            </div>
+            <div class="fact-buttons fact-buttons-olga">
+                <div class="fact-button fact-button-olga left-fact-button">1 факт</div>
+                <div class="fact-button fact-button-olga middle-fact-button">2 факт</div>
+                <div class="fact-button fact-button-olga right-fact-button">3 факт</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <img src="materials/photo/logo-footer.png" alt="Логотип футера" class="footer-logo">
+        <p class="footer-text">Work By <span class="footer-highlight">history project</span> © 2024</p>
+        <button class="footer-button" onclick="scrollToAnchor('preview')">Наверх</button>
+    </footer>
+        
+        <!--СЛУЖЕБНАЯ ЧАСТЬ-->
+        <div class="footer-sluzh">
+            <div class="footer-contacts-content">
+                <div class="footer-contacts-text">
+                    <p class="team-title">Состав команды: Илья Некрасов, Никита Спасский, Иван Патрушев</p>
+                    <p class="team-members">Сделано студентами колледжа цифровых технологий</p>
+                    <p class="typical-info">
+                        Данный блок включает в себя служебную
+                        информацию обязательную для каждого
+                        сайта нашего учебного заведения.
+                        Вы - счастливчик если это увидели.
+                    </a></p>
+                </div>
+                <div class="footer-sluzh-logo">
+                    <img src="materials/photo/collegelogo.png" alt="Логотип колледжа" class="college-logo">
+                </div>
+            </div>
+        </div>
+        <!--СЛУЖЕБНАЯ ЧАСТЬ-->
+
+    <script src="js/preloader.js"></script> <!--- Скрипт для магнита по контейнерам -->
+    <script src="js/magnet.js"></script> <!--- Скрипт для магнита по контейнерам -->
+    <script src="js/BasicScripts.js"></script> <!-- Скрипт для плавного перехода к якорям -->
+    <script src="js/adaptivescale.js"></script> <!-- Скрипт для адаптивного масштабирования -->
+    <script src="materials/characters/Character_OLEG/script.js"></script> <!--Скрипт для Олега-->
+    <script src="materials/characters/Character_IGOR/script.js"></script> <!--Скрипт для Игоря-->
+    <script src="materials/characters/Character_OLGA/script.js"></script> <!--Скрипт для Ольги-->
+</body>
+</html>
